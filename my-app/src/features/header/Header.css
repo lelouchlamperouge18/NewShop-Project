@@ -1,0 +1,40 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80px;
+    background-color: rgb(23, 68, 83);
+    color: white; 
+} 
+.nav-links {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.navStyle {
+    color: pink;
+    text-decoration: none !important;
+}
+
+.navLinksStyle:hover {
+    color: rgb(224, 241, 246);
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+.NavTop {
+    padding-bottom: 0px;
+    opacity: 0.9;
+}
+.NavTop:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+svg {
+    color: rgb(94, 95, 97);
+}
