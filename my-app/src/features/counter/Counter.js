@@ -17,6 +17,9 @@ export function Counter() {
   return (
     <div>
       <div className={styles.row}>
+        <p className={styles.title}> - COUNTER AREA - </p>
+      </div>
+      <div className={styles.row}>
         <button
           className={styles.button}
           aria-label="Increment value"

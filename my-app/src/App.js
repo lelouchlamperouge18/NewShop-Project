@@ -5,6 +5,7 @@ import { Counter } from './features/counter/Counter';
 import { Header } from './features/header/Header';  
 import './App.css';
 
+import { Homepage } from './pages/homepage/Homepage';
 import { New } from './pages/new/New';
 import { Contact } from './pages/contact/Contact';
 
@@ -15,12 +16,12 @@ function App() {
         <BrowserRouter>
           <Header /> 
 
-          <header className="App-header">
+          {/* <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-          </header>
+          </header> */}
 
           <Switch>
-            {/* <Route path="/" component={<div>HOMEPAGE</div>} /> */}
+            <Route exact path="/" component={Homepage} />
             <Route path="/new" component={New} />
             <Route path="/men" component={Counter} />     
             <Route path="/women" component={Counter} />
@@ -30,10 +31,8 @@ function App() {
 
         </BrowserRouter>
       </Suspense>    
-      
-
     </div>
   );
 }
 
-export default App;
+export default App; 

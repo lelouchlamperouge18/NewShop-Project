@@ -14,7 +14,7 @@ import {
   DropdownItem,
   Container
 } from 'reactstrap';
-import logo from '../../assets/photos/logo-shop.jpg';
+import logo from '../../assets/photos/logo2.png';
 import './Header.css';
 
 export function Header() {
@@ -23,7 +23,7 @@ export function Header() {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <div className="NavTop fixed-top">
+        <div className="NavTop sticky-top">
         <Navbar color="light" light expand="md">
             <Container>
             <Link className="navStyle" to="/">

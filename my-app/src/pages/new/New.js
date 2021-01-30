@@ -8,7 +8,17 @@ export function New() {
     const count = useSelector(selectCount); 
     return (
         <div>
-            NEW: {count}
+            NEW: {count} <br></br>
+            NEW: {count} <br></br>
+            NEW: {count} <br></br>
+            NEW: {count} <br></br>
+            NEW: {count} <br></br>
+            NEW: {count} <br></br>
+            NEW: {count} <br></br>
+            NEW: {count} <br></br>
+            NEW: {count} <br></br>
+            NEW: {count} <br></br>
+            NEW: {count} <br></br>
         </div>
     )
 }

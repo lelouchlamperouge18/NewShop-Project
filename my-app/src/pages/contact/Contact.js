@@ -1,8 +1,11 @@
 import React from 'react';
+import { Counter } from '../../features/counter/Counter';
 
 export function Contact() {
     return (
-        <div>
+        <div>            
+            <Counter />
+            <br></br>
             CONTACT PAGE
         </div>
     )
