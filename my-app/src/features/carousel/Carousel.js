@@ -9,14 +9,17 @@ import {
 
 const items = [
   {
-    src: 'https://theme.hstatic.net/1000341902/1000629852/14/slideshow_4.jpg?v=336',
-    altText: 'Spring Collection',
-    caption: 'Spring Collection'
-  },
-  {
+    // src: 'https://theme.hstatic.net/1000341902/1000629852/14/slideshow_4.jpg?v=336',
+    // altText: 'Spring Collection',
+    // caption: 'Spring Collection'
     src: 'https://theme.hstatic.net/1000409756/1000626231/14/slideshow_3.jpg?v=271',
     altText: 'UV Protection Coat',
     caption: 'UV Protection Coat'
+  },
+  {
+    src: 'https://leika.vn/wp-content/uploads/2019/05/happy-mother-day-anh-bia.jpg',
+    altText: 'Happy Mothers Day 2021',
+    caption: 'Happy Mothers Day 2021'
   },
   {
     src: 'https://theme.hstatic.net/1000341902/1000629852/14/slideshow_3.jpg?v=336',
@@ -46,7 +49,8 @@ export function MyCarousel() {
     setActiveIndex(newIndex);
   }
 
-  const slides = items.map((item) => {
+  const slides = items.map((item,index) => {
+    const number = "<< " + String(index + 1) + " >>";
     return (
       <CarouselItem
         onExiting={() => setAnimating(true)}
@@ -54,7 +58,7 @@ export function MyCarousel() {
         key={item.src}
       >
         <img width="100%" src={item.src} alt={item.altText} />
-        <CarouselCaption className="text-secondary" captionText={item.caption} captionHeader={item.caption} />
+        <CarouselCaption className="text-secondary" captionText={number} captionHeader={item.caption} />
       </CarouselItem>
     );
   });

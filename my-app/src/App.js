@@ -1,6 +1,5 @@
 import React, {Suspense} from 'react';
 import { BrowserRouter, Redirect, Route, Router, Switch } from 'react-router-dom';
-import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import { Header } from './features/header/Header';  
 import './App.css';
