@@ -15,10 +15,6 @@ function App() {
         <BrowserRouter>
           <Header /> 
 
-          {/* <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-          </header> */}
-
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route path="/new" component={New} />
