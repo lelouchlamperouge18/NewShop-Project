@@ -96,25 +96,27 @@ export const listproductSlice = createSlice({
       state.inCartQuantity= 1;
     },
     addToCart: (state, action) => {
-      // state.listproduct.product[index].inCart = true;
-      // console.log(state.product[index].productName);
-      // console.log(state.categories);
-      // alert("Add " + state.product[index] + " successfully!");
-      // state.test += 2;
       if (state.product[action.payload].inCart === true) {
         state.product[action.payload].numberInCart++;
-        alert("You had this in your cart! (Quantity: " + state.product[action.payload].numberInCart + ").");
+        alert("You had this in your cart! (Quantitíes: " + state.product[action.payload].numberInCart + ").");
       } else {
         alert("Add " + state.product[action.payload].productName + " to cart succesfully!");
         state.inCartQuantity++;
         state.product[action.payload].inCart = true;
-        state.product[action.payload].numberInCart = 1;
+        state.product[action.payload].numberInCart = 1; 
+        // console.log(action.payload);
       }
+    },
+    removeFromCart: (state, action) => {
+      state.inCartQuantity--;
+      state.product[action.payload-1].numberInCart = 0;
+      state.product[action.payload-1].inCart = false;
+      // console.log(action.payload);
     }
   },
 });
 
-export const { doNothing, addToCart } = listproductSlice.actions;
+export const { doNothing, addToCart, removeFromCart } = listproductSlice.actions;
 
 export const listCategoriesAvailable = state => state.listproduct.categories;
 export const listSubCategoriesAvailable = state => state.listproduct.subcategories;

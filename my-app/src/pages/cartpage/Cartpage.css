@@ -1,0 +1,7 @@
+.Cartpage {
+    padding: 10px auto;
+}
+
+.table td, .table th {
+    vertical-align: 0px !important;
+}

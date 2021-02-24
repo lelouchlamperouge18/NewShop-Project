@@ -31,10 +31,8 @@ export function Listproduct() {
             <Container>
                 <Row>
                     {listofProduct.map((item, index) => (
-                        <Col xs="12" sm="6" md="4" lg="3">
+                        <Col xs="6" sm="6" md="4" lg="3">
                         <div className="product">
-                            {/* PENDDING
-                            <div className="product__shadow"></div>  */}
                             <div className="product__image">
                                 <img className="img-fluid" src={defaultPath} alt="photos"/> 
                             </div>
