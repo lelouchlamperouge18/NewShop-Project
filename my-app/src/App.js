@@ -7,6 +7,7 @@ import './App.css';
 import { Homepage } from './pages/homepage/Homepage';
 import { New } from './pages/new/New';
 import { Contact } from './pages/contact/Contact';
+import { Cartpage } from './pages/cartpage/Cartpage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/women" component={Counter} />
             <Route path="/couple" component={Counter} />   
             <Route path="/contact" component={Contact} />
+            <Route path="/cartpage" component={Cartpage} />
           </Switch>
 
         </BrowserRouter>

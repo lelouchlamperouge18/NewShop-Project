@@ -5,7 +5,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const listproductSlice = createSlice({
   name: 'listproduct',
   initialState: {
-    test: 0,
+    inCartQuantity: 0,
     categories: [
       {categoriesID: 1, categoriesName: 'Men\'s Fashion'},
       {categoriesID: 2, categoriesName: 'Women\'s Fashion'},
@@ -93,15 +93,32 @@ export const listproductSlice = createSlice({
   },
   reducers: {
     doNothing: state => {
-      state.test = 1;
+      state.inCartQuantity= 1;
+    },
+    addToCart: (state, action) => {
+      // state.listproduct.product[index].inCart = true;
+      // console.log(state.product[index].productName);
+      // console.log(state.categories);
+      // alert("Add " + state.product[index] + " successfully!");
+      // state.test += 2;
+      if (state.product[action.payload].inCart === true) {
+        state.product[action.payload].numberInCart++;
+        alert("You had this in your cart! (Quantity: " + state.product[action.payload].numberInCart + ").");
+      } else {
+        alert("Add " + state.product[action.payload].productName + " to cart succesfully!");
+        state.inCartQuantity++;
+        state.product[action.payload].inCart = true;
+        state.product[action.payload].numberInCart = 1;
+      }
     }
   },
 });
 
-export const { doNothing } = listproductSlice.actions;
+export const { doNothing, addToCart } = listproductSlice.actions;
 
 export const listCategoriesAvailable = state => state.listproduct.categories;
 export const listSubCategoriesAvailable = state => state.listproduct.subcategories;
 export const listProductAvailable = state => state.listproduct.product;
+export const forTest = state => state.listproduct.inCartQuantity;
 
 export default listproductSlice.reducer;
