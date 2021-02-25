@@ -48,7 +48,7 @@ export function Listproduct() {
                                 {item.price} $
                             </div>
                             <div className="product__currentPrice">
-                                {item.price*(100-item.discount)/100} $
+                                {(item.price*(100-item.discount)/100).toFixed(1)} $
                             </div>                       
                             <Row>
                                 <Col xs="6" sm="6" md="6" lg="6">

@@ -5,13 +5,16 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
     Container, Row, Col,
     Table,
-    Button
+    Button,
+    Toast, ToastBody, ToastHeader 
 } from 'reactstrap';
 
 import {
     forTest,
     listProductAvailable,
-    removeFromCart
+    removeFromCart,
+    increaseProduct,
+    decreaseProduct
 } from '../../features/listproduct/listproductSlice';
 
 export function Cartpage() {
@@ -27,6 +30,42 @@ export function Cartpage() {
             <hr></hr>
             <Container>
                 <Row>
+                    <Col xs="12" sm="4" md="4" lg="4">
+                        <div className="p-3 bg-success my-2 rounded">
+                            <Toast>
+                            <ToastHeader>
+                                BẢO HÀNH SẢN PHẨM 
+                            </ToastHeader>
+                            <ToastBody>
+                                <strong style={{'font-size': 20}}>⌚ 90 NGÀY</strong>
+                            </ToastBody>
+                            </Toast>
+                        </div>
+                    </Col>
+                    <Col xs="12" sm="4" md="4" lg="4">
+                        <div className="p-3 bg-info my-2 rounded">
+                            <Toast>
+                            <ToastHeader>
+                                ĐỔI HÀNG MIỄN PHÍ 
+                            </ToastHeader>
+                            <ToastBody>
+                                <strong style={{'font-size': 20}}>⌛ 20 NGÀY</strong>
+                            </ToastBody>
+                            </Toast>
+                        </div>
+                    </Col>
+                    <Col xs="12" sm="4" md="4" lg="4">
+                        <div className="p-3 bg-danger my-2 rounded">
+                            <Toast>
+                            <ToastHeader>
+                                HOTLINE TƯ VẤN 
+                            </ToastHeader>
+                            <ToastBody>
+                                <strong style={{'font-size': 20}}>✆ 0123456789</strong>
+                            </ToastBody>
+                            </Toast>
+                        </div>
+                    </Col>
                     <Col xs="12" sm="12" md="12" lg="12">
                     <Table dark>
                         <thead>
@@ -45,13 +84,13 @@ export function Cartpage() {
                                     <th scope="row">{index+1}</th>
                                     <td>{item.productName}</td>
                                     <td> 
-                                        <Button color="secondary">
+                                        <Button color="secondary" onClick={() => dispatch(decreaseProduct(item.productID))}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-dash" viewBox="0 0 16 16">
                                             <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
                                         </svg>   
                                         </Button>
                                             {item.numberInCart}
-                                        <Button color="secondary">
+                                        <Button color="secondary" onClick={() => dispatch(increaseProduct(item.productID))}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-plus" viewBox="0 0 16 16">
                                             <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"></path>
                                         </svg>          

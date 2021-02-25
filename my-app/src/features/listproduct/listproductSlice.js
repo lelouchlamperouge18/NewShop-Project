@@ -1,4 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
+// import { 
+//   Button, Modal, ModalHeader, ModalBody, ModalFooter,
+//   Toast, ToastBody, ToastHeader
+// } from 'reactstrap';
 // import defaultPath from '../../assets/photos/kagome.jpg';
 // const defaultPath = '../../assets/photos/kagome.jpg';
 
@@ -37,58 +41,58 @@ export const listproductSlice = createSlice({
       {productID: 4, productName: 'Men\'s T-Shirt 1', price: 990, discount: 10, status: 'Available', rate: 5, description: 'Description default 4', imagePath: '', subcategoriesID: 2, inCart: false, numberInCart: 0},
       {productID: 5, productName: 'Men\'s T-Shirt 2', price: 55, discount: 10, status: 'Available', rate: 2, description: 'Description default', imagePath: '', subcategoriesID: 2, inCart: false, numberInCart: 0},
       {productID: 6, productName: 'Men\'s T-Shirt 3', price: 232, discount: 15, status: 'Available', rate: 5, description: 'Description default', imagePath: '', subcategoriesID: 2, inCart: false, numberInCart: 0},
-      {productID: 7, productName: 'Men\'s Jackets 1', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 3, inCart: false, numberInCart: 0},
-      {productID: 8, productName: 'Men\'s Jackets 2', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 3, inCart: false, numberInCart: 0},
-      {productID: 9, productName: 'Men\'s Jackets 3', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 3, inCart: false, numberInCart: 0},
-      {productID: 10, productName: 'Men\'s Jackets 4', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 3, inCart: false, numberInCart: 0},
-      {productID: 11, productName: 'Men\'s Jackets 5', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 3, inCart: false, numberInCart: 0},
-      {productID: 12, productName: 'Men\'s Vest 1', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 4 , inCart: false, numberInCart: 0},
-      {productID: 13, productName: 'Men\'s Short 1', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 5, inCart: false, numberInCart: 0},
-      {productID: 14, productName: 'Men\'s Short 2', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 5, inCart: false, numberInCart: 0},
-      {productID: 15, productName: 'Men\'s Jeans 1', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 6, inCart: false, numberInCart: 0},
-      {productID: 16, productName: 'Men\'s Jeans 2', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 6, inCart: false, numberInCart: 0},
+      {productID: 7, productName: 'Men\'s Jackets 1', price: 213, discount: 23, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 8, productName: 'Men\'s Jackets 2', price: 980, discount: 50, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 9, productName: 'Men\'s Jackets 3', price: 350, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 10, productName: 'Men\'s Jackets 4', price: 120, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 11, productName: 'Men\'s Jackets 5', price: 500, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 12, productName: 'Men\'s Vest 1', price: 100, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 4 , inCart: false, numberInCart: 0},
+      {productID: 13, productName: 'Men\'s Short 1', price: 150, discount: 20, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 5, inCart: false, numberInCart: 0},
+      {productID: 14, productName: 'Men\'s Short 2', price: 180, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 5, inCart: false, numberInCart: 0},
+      {productID: 15, productName: 'Men\'s Jeans 1', price: 120, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 6, inCart: false, numberInCart: 0},
+      {productID: 16, productName: 'Men\'s Jeans 2', price: 300, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 6, inCart: false, numberInCart: 0},
       {productID: 17, productName: 'Men\'s Jeans 3', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 6, inCart: false, numberInCart: 0},
       {productID: 18, productName: 'Men\'s Jeans 4', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 6, inCart: false, numberInCart: 0},
 
-      {productID: 19, productName: 'Women\'s Shirt 1', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 7, inCart: false, numberInCart: 0},
-      {productID: 20, productName: 'Women\'s Shirt 2', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 7, inCart: false, numberInCart: 0},
-      {productID: 21, productName: 'Women\'s Shirt 3', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 7, inCart: false, numberInCart: 0},
-      {productID: 22, productName: 'Women\'s Shirt 4', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 7, inCart: false, numberInCart: 0},
-      {productID: 23, productName: 'Women\'s Shirt 5', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 7, inCart: false, numberInCart: 0},
-      {productID: 24, productName: 'Women\'s Shirt 6', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 7, inCart: false, numberInCart: 0},
-      {productID: 25, productName: 'Women\'s T-Shirt 1', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 8, inCart: false, numberInCart: 0},
-      {productID: 26, productName: 'Women\'s T-Shirt 2', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 8, inCart: false, numberInCart: 0},
-      {productID: 27, productName: 'Women\'s T-Shirt 3', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 8, inCart: false, numberInCart: 0},
-      {productID: 28, productName: 'Women\'s T-Shirt 4', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 8, inCart: false, numberInCart: 0},
-      {productID: 29, productName: 'Women\'s T-Shirt 5', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 8, inCart: false, numberInCart: 0},
-      {productID: 30, productName: 'Women\'s T-Shirt 6', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 8, inCart: false, numberInCart: 0},
-      {productID: 31, productName: 'Women\'s Jackets 1', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 9, inCart: false, numberInCart: 0},
-      {productID: 32, productName: 'Women\'s Jackets 2', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 9, inCart: false, numberInCart: 0},
-      {productID: 33, productName: 'Aodai 1', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 10, inCart: false, numberInCart: 0},
-      {productID: 34, productName: 'Aodai 2', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 10, inCart: false, numberInCart: 0},
-      {productID: 35, productName: 'Aodai 3', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 10, inCart: false, numberInCart: 0},
-      {productID: 36, productName: 'Women\'s Short 1', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 11, inCart: false, numberInCart: 0},
-      {productID: 37, productName: 'Women\'s Short 2', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 11, inCart: false, numberInCart: 0},
-      {productID: 38, productName: 'Women\'s Short 3', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 11, inCart: false, numberInCart: 0},
-      {productID: 39, productName: 'Women\'s Short 4', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 11, inCart: false, numberInCart: 0},
-      {productID: 40, productName: 'Women\'s Short 5', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 11, inCart: false, numberInCart: 0},
-      {productID: 41, productName: 'Women\'s Short 6', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 11, inCart: false, numberInCart: 0},
-      {productID: 42, productName: 'Skirt 1', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 12, inCart: false, numberInCart: 0},
-      {productID: 43, productName: 'Skirt 2', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 12, inCart: false, numberInCart: 0},
-      {productID: 44, productName: 'Skirt 3', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 12, inCart: false, numberInCart: 0},
-      {productID: 45, productName: 'Skirt 4', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 12, inCart: false, numberInCart: 0},
-      {productID: 46, productName: 'Skirt 5', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 12, inCart: false, numberInCart: 0},
-      {productID: 47, productName: 'Skirt 6', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 12, inCart: false, numberInCart: 0},
+      {productID: 19, productName: 'Women\'s Shirt 1', price: 300, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 7, inCart: false, numberInCart: 0},
+      {productID: 20, productName: 'Women\'s Shirt 2', price: 340, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 7, inCart: false, numberInCart: 0},
+      {productID: 21, productName: 'Women\'s Shirt 3', price: 350, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 7, inCart: false, numberInCart: 0},
+      {productID: 22, productName: 'Women\'s Shirt 4', price: 400, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 7, inCart: false, numberInCart: 0},
+      {productID: 23, productName: 'Women\'s Shirt 5', price: 420, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 7, inCart: false, numberInCart: 0},
+      {productID: 24, productName: 'Women\'s Shirt 6', price: 500, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 7, inCart: false, numberInCart: 0},
+      {productID: 25, productName: 'Women\'s T-Shirt 1', price: 250, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 8, inCart: false, numberInCart: 0},
+      {productID: 26, productName: 'Women\'s T-Shirt 2', price: 350, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 8, inCart: false, numberInCart: 0},
+      {productID: 27, productName: 'Women\'s T-Shirt 3', price: 450, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 8, inCart: false, numberInCart: 0},
+      {productID: 28, productName: 'Women\'s T-Shirt 4', price: 550, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 8, inCart: false, numberInCart: 0},
+      {productID: 29, productName: 'Women\'s T-Shirt 5', price: 650, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 8, inCart: false, numberInCart: 0},
+      {productID: 30, productName: 'Women\'s T-Shirt 6', price: 750, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 8, inCart: false, numberInCart: 0},
+      {productID: 31, productName: 'Women\'s Jackets 1', price: 800, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 9, inCart: false, numberInCart: 0},
+      {productID: 32, productName: 'Women\'s Jackets 2', price: 1000, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 9, inCart: false, numberInCart: 0},
+      {productID: 33, productName: 'Aodai 1', price: 800, discount: 20, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 10, inCart: false, numberInCart: 0},
+      {productID: 34, productName: 'Aodai 2', price: 1000, discount: 20, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 10, inCart: false, numberInCart: 0},
+      {productID: 35, productName: 'Aodai 3', price: 1200, discount: 20, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 10, inCart: false, numberInCart: 0},
+      {productID: 36, productName: 'Women\'s Short 1', price: 220, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 11, inCart: false, numberInCart: 0},
+      {productID: 37, productName: 'Women\'s Short 2', price: 330, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 11, inCart: false, numberInCart: 0},
+      {productID: 38, productName: 'Women\'s Short 3', price: 440, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 11, inCart: false, numberInCart: 0},
+      {productID: 39, productName: 'Women\'s Short 4', price: 550, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 11, inCart: false, numberInCart: 0},
+      {productID: 40, productName: 'Women\'s Short 5', price: 660, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 11, inCart: false, numberInCart: 0},
+      {productID: 41, productName: 'Women\'s Short 6', price: 770, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 11, inCart: false, numberInCart: 0},
+      {productID: 42, productName: 'Skirt 1', price: 880, discount: 7, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 12, inCart: false, numberInCart: 0},
+      {productID: 43, productName: 'Skirt 2', price: 990, discount: 7, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 12, inCart: false, numberInCart: 0},
+      {productID: 44, productName: 'Skirt 3', price: 1000, discount: 12, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 12, inCart: false, numberInCart: 0},
+      {productID: 45, productName: 'Skirt 4', price: 1100, discount: 12, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 12, inCart: false, numberInCart: 0},
+      {productID: 46, productName: 'Skirt 5', price: 1110, discount: 12, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 12, inCart: false, numberInCart: 0},
+      {productID: 47, productName: 'Skirt 6', price: 1200, discount: 12, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 12, inCart: false, numberInCart: 0},
 
-      {productID: 48, productName: 'Couple T-Shirt 1', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 13, inCart: false, numberInCart: 0},
-      {productID: 49, productName: 'Couple T-Shirt 2', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 13, inCart: false, numberInCart: 0},
-      {productID: 50, productName: 'Couple T-Shirt 3', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 13, inCart: false, numberInCart: 0},
-      {productID: 51, productName: 'Couple Jackets 1', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 14, inCart: false, numberInCart: 0},
-      {productID: 52, productName: 'Couple Jackets 2', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 14, inCart: false, numberInCart: 0},
-      {productID: 53, productName: 'Couple Jackets 3', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 14, inCart: false, numberInCart: 0},
-      {productID: 54, productName: 'Couple Jackets 4', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 14, inCart: false, numberInCart: 0},
-      {productID: 55, productName: 'Couple Hat 1', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 15, inCart: false, numberInCart: 0},
-      {productID: 56, productName: 'Couple Hat 2', price: 0, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 15, inCart: false, numberInCart: 0}
+      {productID: 48, productName: 'Couple T-Shirt 1', price: 600, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 13, inCart: false, numberInCart: 0},
+      {productID: 49, productName: 'Couple T-Shirt 2', price: 750, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 13, inCart: false, numberInCart: 0},
+      {productID: 50, productName: 'Couple T-Shirt 3', price: 800, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 13, inCart: false, numberInCart: 0},
+      {productID: 51, productName: 'Couple Jackets 1', price: 650, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 14, inCart: false, numberInCart: 0},
+      {productID: 52, productName: 'Couple Jackets 2', price: 700, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 14, inCart: false, numberInCart: 0},
+      {productID: 53, productName: 'Couple Jackets 3', price: 900, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 14, inCart: false, numberInCart: 0},
+      {productID: 54, productName: 'Couple Jackets 4', price: 1000, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 14, inCart: false, numberInCart: 0},
+      {productID: 55, productName: 'Couple Hat 1', price: 30, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 15, inCart: false, numberInCart: 0},
+      {productID: 56, productName: 'Couple Hat 2', price: 50, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: '', subcategoriesID: 15, inCart: false, numberInCart: 0}
     ],
   },
   reducers: {
@@ -98,25 +102,30 @@ export const listproductSlice = createSlice({
     addToCart: (state, action) => {
       if (state.product[action.payload].inCart === true) {
         state.product[action.payload].numberInCart++;
-        alert("You had this in your cart! (Quantitíes: " + state.product[action.payload].numberInCart + ").");
+        alert("You had this in your cart! (Quantities: " + state.product[action.payload].numberInCart + ").");
       } else {
         alert("Add " + state.product[action.payload].productName + " to cart succesfully!");
         state.inCartQuantity++;
         state.product[action.payload].inCart = true;
         state.product[action.payload].numberInCart = 1; 
-        // console.log(action.payload);
       }
     },
     removeFromCart: (state, action) => {
       state.inCartQuantity--;
       state.product[action.payload-1].numberInCart = 0;
       state.product[action.payload-1].inCart = false;
-      // console.log(action.payload);
+    },
+    increaseProduct: (state, action) => {
+      state.product[action.payload-1].numberInCart++;
+    },
+    decreaseProduct: (state, action) => {
+      if (state.product[action.payload-1].numberInCart > 1)
+        state.product[action.payload-1].numberInCart--;
     }
   },
 });
 
-export const { doNothing, addToCart, removeFromCart } = listproductSlice.actions;
+export const { doNothing, addToCart, removeFromCart, increaseProduct, decreaseProduct } = listproductSlice.actions;
 
 export const listCategoriesAvailable = state => state.listproduct.categories;
 export const listSubCategoriesAvailable = state => state.listproduct.subcategories;
