@@ -75,7 +75,7 @@ export function Cartpage() {
                             <th>Quantities</th>
                             <th>Price (included discount)</th> 
                             <th>Final Price</th>
-                            <th></th>
+                            <th>ACTION</th>
                             </tr>
                         </thead>
                         <tbody>

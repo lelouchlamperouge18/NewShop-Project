@@ -8,6 +8,7 @@ import { Homepage } from './pages/homepage/Homepage';
 import { New } from './pages/new/New';
 import { Contact } from './pages/contact/Contact';
 import { Cartpage } from './pages/cartpage/Cartpage';
+import { Singlepostpage } from './pages/singlepostpage/Singlepostpage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/couple" component={Counter} />   
             <Route path="/contact" component={Contact} />
             <Route path="/cartpage" component={Cartpage} />
+            <Route exact path="/products/:productID" component={Singlepostpage} />
           </Switch>
 
         </BrowserRouter>

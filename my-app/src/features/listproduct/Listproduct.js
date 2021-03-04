@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 // import styles from './Listproduct.module.css';
 // import { Redirect } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'reactstrap'
@@ -51,12 +52,19 @@ export function Listproduct() {
                                 {(item.price*(100-item.discount)/100).toFixed(1)} $
                             </div>                       
                             <Row>
-                                <Col xs="6" sm="6" md="6" lg="6">
+                                <Col xs="4" sm="4" md="4" lg="4">
                                     <div className="product__add-to-love">
                                         <Button outline color="danger">❤️️</Button>{' '}
                                     </div>
                                 </Col>
-                                <Col xs="6" sm="6" md="6" lg="6">
+                                <Col xs="4" sm="4" md="4" lg="4">
+                                    <div className="product__single-view">                                        
+                                        <Link to={`/products/${item.productID}`}>
+                                            <Button outline color="primary">⋯</Button>
+                                        </Link>                                       ️
+                                    </div>
+                                </Col>
+                                <Col xs="4" sm="4" md="4" lg="4">
                                     <div className="product__add-to-cart" onClick={() => dispatch(addToCart(index))}>
                                         <Button outline color="info" >
                                             <svg width="1.25em" height="1.25em" viewBox="0 1 16 16" class="bi bi-shop" fill="purple" xmlns="http://www.w3.org/2000/svg">
