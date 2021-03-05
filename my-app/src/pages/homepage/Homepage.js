@@ -8,14 +8,8 @@ export function Homepage() {
         <div>
             <MyCarousel />
             <br></br>
-            HOME PAGE 1<br></br>
-            HOME PAGE 2<br></br>
-            HOME PAGE 3<br></br>
-            HOME PAGE 4<br></br>
-            HOME PAGE 5<br></br>
-            HOME PAGE 6<br></br>
-            HOME PAGE 7<br></br>
-            HOME PAGE 8<br></br>
+            HOME PAGE
+            <br></br>
         </div>
     )
 }

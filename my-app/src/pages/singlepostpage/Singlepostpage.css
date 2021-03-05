@@ -1,0 +1,49 @@
+.Singlepostpage {
+    padding: auto;
+}
+
+.Singlepostpage__image {
+    border: solid 1px black;
+    padding: 5px;
+    opacity: 0.9;
+}
+
+.Singlepostpage__image:hover {
+    opacity: 1;
+    transform: 1s;
+}
+
+.Singlepostpage__productName {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 35px;
+    color: black;
+    font-weight: bold; 
+    padding-bottom: 15px;
+}
+
+.Singlepostpage__description, .Singlepostpage__status {
+    text-align: left;
+    font-size: 18px;
+    color: black;
+    padding: 10px auto;
+}
+
+.Singlepostpage__realprice {
+    text-align: left;
+    font-size: 34px;
+    color: red;
+}
+
+.Singlepostpage__price {
+    text-align: left;
+    font-size: 30px;
+    color: black;
+    text-decoration-line: line-through;
+}
+
+.Singlepostpage__buttongroup {
+    text-align: left;
+    float: left;
+    padding: 20px 0px;
+}

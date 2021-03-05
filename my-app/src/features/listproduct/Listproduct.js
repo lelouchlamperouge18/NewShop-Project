@@ -17,15 +17,14 @@ import {
 import defaultPath from '../../assets/photos/kagome.jpg';
 
 export function Listproduct() {
-    const count = useSelector(selectCount); 
+    // const count = useSelector(selectCount); 
     const dispatch = useDispatch();
     const listofProduct = useSelector(listProductAvailable);
     const quantityProduct = listofProduct.length;
     return (
         <div className="Listproduct">
-            NEW COUNTER: {count} 
+            {/* NEW COUNTER: {count}  */}
             <br></br>
-            <hr></hr>
             <p style={{'color': 'purple', 'font-size': 30}}>LIST PRODUCTS</p>
             <p> Hiện có {quantityProduct} sản phẩm </p>
             <hr></hr>
@@ -37,10 +36,12 @@ export function Listproduct() {
                             <div className="product__image">
                                 <img className="img-fluid" src={defaultPath} alt="photos"/> 
                             </div>
-                            <div className="product__name">
+                            <div className="product__name" style={{"text-decoration": "none !important"}}>
                                 ● {index+1} ●
                                 <br></br>
-                                {item.productName}
+                                <Link to={`/products/${item.productID}`}>
+                                    {item.productName}
+                                </Link>
                             </div>
                             <div className="product__description">
                                 {item.description}
