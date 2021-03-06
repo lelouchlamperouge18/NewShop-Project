@@ -46,98 +46,71 @@ export function Header() {
                 </Link>
                 <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
-                        MEN'S FASHION
+                        CLOTHES/COSPLAY
                     </DropdownToggle>
                     <DropdownMenu right>
-                        <Link className="navStyle navLinksStyle" to="/men">
+                        <Link className="navStyle navLinksStyle" to="/clothes">
                         <DropdownItem>
-                            Men's Shirt
+                            Shirt/T-Shirt
                         </DropdownItem>
                         </Link>
-                        <Link className="navStyle navLinksStyle" to="/men">
+                        <Link className="navStyle navLinksStyle" to="/clothes">
                         <DropdownItem>
-                            Men's T-Shirt
-                        </DropdownItem>
-                        </Link>
-                        <Link className="navStyle navLinksStyle" to="/men">
-                        <DropdownItem>
-                            Men's Jackets
-                        </DropdownItem>
-                        </Link>
-                        <Link className="navStyle navLinksStyle" to="/men">
-                        <DropdownItem>
-                            Men's Vest
-                        </DropdownItem>
-                        </Link>
-                        <DropdownItem divider />
-                        <Link className="navStyle navLinksStyle" to="/men">
-                        <DropdownItem>
-                            Men's Short
-                        </DropdownItem>
-                        </Link>
-                        <Link className="navStyle navLinksStyle" to="/men">
-                        <DropdownItem>
-                            Men's Jeans
+                            Cosplay Combo
                         </DropdownItem>
                         </Link>
                     </DropdownMenu>
                 </UncontrolledDropdown>
                 <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
-                        WOMEN'S FASHION
+                        FIGURE
                     </DropdownToggle>
                     <DropdownMenu right>
-                        <Link className="navStyle navLinksStyle" to="/women">
+                        <Link className="navStyle navLinksStyle" to="/figure">
                         <DropdownItem>
-                            Women's Shirt
+                            Action Figure
                         </DropdownItem>
                         </Link>
-                        <Link className="navStyle navLinksStyle" to="/women">
+                        <Link className="navStyle navLinksStyle" to="/figure">
                         <DropdownItem>
-                            Women's T-Shirt
+                            Scale Figure
                         </DropdownItem>
                         </Link>
-                        <Link className="navStyle navLinksStyle" to="/women">
+                        <Link className="navStyle navLinksStyle" to="/figure">
                         <DropdownItem>
-                            Women's Jackets
-                        </DropdownItem>
-                        </Link>
-                        <Link className="navStyle navLinksStyle" to="/women">
-                        <DropdownItem>
-                            Aodai
-                        </DropdownItem>
-                        </Link>
-                        <DropdownItem divider />
-                        <Link className="navStyle navLinksStyle" to="/women">
-                        <DropdownItem>
-                            Women's Short
-                        </DropdownItem>
-                        </Link>
-                        <Link className="navStyle navLinksStyle" to="/women">
-                        <DropdownItem>
-                            Skirt
+                            Combo Figure
                         </DropdownItem>
                         </Link>
                     </DropdownMenu>
                 </UncontrolledDropdown>
                 <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
-                        COUPLE'S FASHION
+                        OTHERS ACCESSORIES
                     </DropdownToggle>
                     <DropdownMenu right>
-                        <Link className="navStyle navLinksStyle" to="/couple">
+                        <Link className="navStyle navLinksStyle" to="/others-accessories">
                         <DropdownItem>
-                            Couple T-Shirt
+                            Balo
                         </DropdownItem>
                         </Link>
-                        <Link className="navStyle navLinksStyle" to="/couple">
+                        <Link className="navStyle navLinksStyle" to="/others-accessories">
                         <DropdownItem>
-                            Couple Jackets
+                            Jewelry
+                        </DropdownItem>
+                        </Link>
+                        <Link className="navStyle navLinksStyle" to="/others-accessories">
+                        <DropdownItem>
+                            Stuffed Toy
+                        </DropdownItem>
+                        </Link>
+                        <Link className="navStyle navLinksStyle" to="/others-accessories">
+                        <DropdownItem>
+                            Others
                         </DropdownItem>
                         </Link>
                         <DropdownItem divider />
                         <DropdownItem disabled>
-                            Couple Hat
+                            Coming soon...
                         </DropdownItem>
                     </DropdownMenu>
                 </UncontrolledDropdown>

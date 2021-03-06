@@ -34,7 +34,11 @@ export function Listproduct() {
                         <Col xs="6" sm="6" md="4" lg="3">
                         <div className="product">
                             <div className="product__image">
-                                <img className="img-fluid" src={defaultPath} alt="photos"/> 
+                                {!item.imagePath?
+                                    <img className="img-fluid product__image--main" src={defaultPath} alt="photos"/> 
+                                    :
+                                    <img className="img-fluid product__image--main" src={item.imagePath} alt="photos"/> 
+                                }
                             </div>
                             <div className="product__name" style={{"text-decoration": "none !important"}}>
                                 ● {index+1} ●
@@ -47,10 +51,10 @@ export function Listproduct() {
                                 {item.description}
                             </div>
                             <div className="product__price">
-                                {item.price} $
+                                {item.price} ¥
                             </div>
                             <div className="product__currentPrice">
-                                {(item.price*(100-item.discount)/100).toFixed(1)} $
+                                {(item.price*(100-item.discount)/100).toFixed(1)} ¥
                             </div>                       
                             <Row>
                                 <Col xs="4" sm="4" md="4" lg="4">

@@ -5,3 +5,7 @@
 .table td, .table th {
     vertical-align: 0px !important;
 }
+
+.Cartpage__button {
+    margin: 0px 10px;
+}

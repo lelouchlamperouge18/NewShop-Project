@@ -34,12 +34,16 @@ export const Singlepostpage = ({match}) => {
                 <Row>
                     <Col xs="12" sm="8" md="9" lg="9">
                         <Row>
-                            <Col xs="12" sm="4" md="4" lg="4">
+                            <Col xs="12" sm="5" md="5" lg="5">
                                 <Card>
+                                    {!singleProduct.imagePath?
                                     <CardImg className="Singlepostpage__image" top width="100%" src={defaultPath} alt="Card image" />
+                                    :
+                                    <CardImg className="Singlepostpage__image" top width="100%" src={singleProduct.imagePath} alt="Card image" />
+                                    }
                                 </Card>
                             </Col>
-                            <Col xs="0" sm="1" md="1" lg="1"></Col>
+                            {/* <Col xs="0" sm="1" md="1" lg="1"></Col> */}
                             <Col xs="12" sm="7" md="7" lg="7">
                                 <div className="Singlepostpage__productName">
                                     {singleProduct.productName}
@@ -51,10 +55,10 @@ export const Singlepostpage = ({match}) => {
                                     Status: {singleProduct.status}
                                 </div>
                                 <div className="Singlepostpage__realprice">
-                                    {singleProduct.price*(100-singleProduct.discount)/100} $
+                                    {singleProduct.price*(100-singleProduct.discount)/100} ¥
                                 </div>
                                 <div className="Singlepostpage__price">
-                                    {singleProduct.price} $
+                                    {singleProduct.price} ¥
                                 </div>
                                 <ButtonGroup className="Singlepostpage__buttongroup">
                                     <Button color="danger">Add to love ❤️</Button>

@@ -20,9 +20,9 @@ function App() {
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route path="/new" component={New} />
-            <Route path="/men" component={Counter} />     
-            <Route path="/women" component={Counter} />
-            <Route path="/couple" component={Counter} />   
+            <Route path="/clothes" component={Counter} />     
+            <Route path="/figure" component={Counter} />
+            <Route path="/others-accessories" component={Counter} />   
             <Route path="/contact" component={Contact} />
             <Route path="/cartpage" component={Cartpage} />
             <Route exact path="/products/:productID" component={Singlepostpage} />
