@@ -63,14 +63,18 @@ export const Singlepostpage = ({match}) => {
                                 <ButtonGroup className="Singlepostpage__buttongroup">
                                     <Button color="danger">Add to love ❤️</Button>
                                     <pre>  </pre>
-                                    <Button color="info" onClick={() => dispatch(addToCart(singleProduct.productID-1))}>Add to cart +</Button>
+                                    {singleProduct.status == 'Available'?
+                                        <Button color="info" onClick={() => dispatch(addToCart(singleProduct.productID-1))}>Add to cart +</Button>
+                                        :
+                                        <Button disabled color="info" onClick={() => dispatch(addToCart(singleProduct.productID-1))}>Add to cart +</Button>
+                                    }                                    
                                 </ButtonGroup>
                             </Col>
                         </Row>
                     </Col>
                     <Col xs="12" sm="4" md="3" lg="3">
                         <div className="Singlepostpage__748">
-                            <p>CHÍNH SÁCH BÁN HÀNG</p>
+                            <p>SALES POLICY</p>
                             <img className="img-fluid" src={image748} alt="photos"/> 
                         </div>
                     </Col>

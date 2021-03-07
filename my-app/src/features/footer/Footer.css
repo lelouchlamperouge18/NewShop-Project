@@ -1,0 +1,30 @@
+.Footer {
+    background: rgb(27, 1, 31);
+    color: white;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.footer__title {
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.footer__info {
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer__list {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 14px;
+    padding-inline-start: 0px !important;
+}
+
+.footer__list li {
+    padding: 4px 0px;
+}

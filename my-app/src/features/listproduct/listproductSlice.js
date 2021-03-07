@@ -91,22 +91,22 @@ export const listproductSlice = createSlice({
       {productID: 23, productName: 'Tsuyuri Kanao Costume', price: 3420, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img23, subcategoriesID: 2, inCart: false, numberInCart: 0},
       {productID: 24, productName: 'Asuma SAO Costume', price: 3500, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img24, subcategoriesID: 2, inCart: false, numberInCart: 0},
 
-      {productID: 25, productName: 'Figure Rem - Birthday Ver.', price: 2500, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: img25, subcategoriesID: 8, inCart: false, numberInCart: 0},
-      {productID: 26, productName: 'Re:Zero Rem Figure Cat Ver', price: 3500, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: img26, subcategoriesID: 8, inCart: false, numberInCart: 0},
-      {productID: 27, productName: 'Figure Naruto Cửu Vĩ Hình', price: 3500, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: img27, subcategoriesID: 8, inCart: false, numberInCart: 0},
-      {productID: 28, productName: 'Figure Gaara', price: 5500, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: img28, subcategoriesID: 8, inCart: false, numberInCart: 0},
-      {productID: 29, productName: 'Figure Hinata Byakugan', price: 4500, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: img29, subcategoriesID: 8, inCart: false, numberInCart: 0},
-      {productID: 30, productName: 'Figure Kakuzu Akatsuki', price: 3500, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: img30, subcategoriesID: 8, inCart: false, numberInCart: 0},
-      {productID: 31, productName: 'Figure Tanjiro Kimetssu No Yaiba', price: 2800, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: img31, subcategoriesID: 9, inCart: false, numberInCart: 0},
-      {productID: 32, productName: 'Figure Hatsune Miku', price: 1000, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: img32, subcategoriesID: 9, inCart: false, numberInCart: 0},
-      {productID: 33, productName: 'Hatsune Miku Limited', price: 10000, discount: 20, status: 'Available', rate: 0, description: 'Description default', imagePath: img33, subcategoriesID: 10, inCart: false, numberInCart: 0},
-      {productID: 34, productName: 'Hot Fate/ Apocrypha Astolfo Swimsuit Ver.', price: 1500, discount: 20, status: 'Available', rate: 0, description: 'Description default', imagePath: img34, subcategoriesID: 10, inCart: false, numberInCart: 0},
-      {productID: 35, productName: 'One Piece ZORO Figure', price: 2200, discount: 20, status: 'Available', rate: 0, description: 'Description default', imagePath: img35, subcategoriesID: 10, inCart: false, numberInCart: 0},
-      {productID: 36, productName: 'SAO Asuna Figure', price: 2220, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img36, subcategoriesID: 11, inCart: false, numberInCart: 0},
-      {productID: 37, productName: 'Charlotte Tomori Nao Figure', price: 3330, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img37, subcategoriesID: 11, inCart: false, numberInCart: 0},
-      {productID: 38, productName: 'Kobayashi-san no Maid Dragon Figure', price: 4400, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img38, subcategoriesID: 11, inCart: false, numberInCart: 0},
-      {productID: 39, productName: 'Nendoroid Nekopara Chocola', price: 7000, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img39, subcategoriesID: 11, inCart: false, numberInCart: 0},
-      {productID: 40, productName: 'Figure Nekopara Vanilla', price: 7000, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img40, subcategoriesID: 11, inCart: false, numberInCart: 0}
+      {productID: 25, productName: 'Figure Rem - Birthday Ver.', price: 2500, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: img25, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 26, productName: 'Re:Zero Rem Figure Cat Ver', price: 3500, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: img26, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 27, productName: 'Figure Naruto Cửu Vĩ Hình', price: 3500, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: img27, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 28, productName: 'Figure Gaara', price: 5500, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: img28, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 29, productName: 'Figure Hinata Byakugan', price: 4500, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: img29, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 30, productName: 'Figure Kakuzu Akatsuki', price: 3500, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: img30, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 31, productName: 'Figure Tanjiro Kimetssu No Yaiba', price: 2800, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: img31, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 32, productName: 'Figure Hatsune Miku', price: 1000, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: img32, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 33, productName: 'Hatsune Miku Limited', price: 10000, discount: 20, status: 'Available', rate: 0, description: 'Description default', imagePath: img33, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 34, productName: 'Hot Fate/ Apocrypha Astolfo Swimsuit Ver.', price: 1500, discount: 20, status: 'Available', rate: 0, description: 'Description default', imagePath: img34, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 35, productName: 'One Piece ZORO Figure', price: 2200, discount: 20, status: 'Available', rate: 0, description: 'Description default', imagePath: img35, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 36, productName: 'SAO Asuna Figure', price: 2220, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img36, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 37, productName: 'Charlotte Tomori Nao Figure', price: 3330, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img37, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 38, productName: 'Kobayashi-san no Maid Dragon Figure', price: 4400, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img38, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 39, productName: 'Nendoroid Nekopara Chocola', price: 7000, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img39, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 40, productName: 'Figure Nekopara Vanilla', price: 7000, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img40, subcategoriesID: 3, inCart: false, numberInCart: 0}
     ],
   },
   reducers: {
@@ -145,5 +145,6 @@ export const listCategoriesAvailable = state => state.listproduct.categories;
 export const listSubCategoriesAvailable = state => state.listproduct.subcategories;
 export const listProductAvailable = state => state.listproduct.product;
 export const forTest = state => state.listproduct.inCartQuantity;
+export const totalPrice = state => state.listproduct.product.filter(item => item.inCart === true).reduce(function(a,b) {return a + b.numberInCart*b.price*(100-b.discount)/100;},0);
 
 export default listproductSlice.reducer;

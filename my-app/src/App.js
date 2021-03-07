@@ -2,6 +2,7 @@ import React, {Suspense} from 'react';
 import { BrowserRouter, Redirect, Route, Router, Switch } from 'react-router-dom';
 import { Counter } from './features/counter/Counter';
 import { Header } from './features/header/Header';  
+import { Footer } from './features/footer/Footer';  
 import './App.css';
 
 import { Homepage } from './pages/homepage/Homepage';
@@ -28,6 +29,7 @@ function App() {
             <Route exact path="/products/:productID" component={Singlepostpage} />
           </Switch>
 
+          <Footer />
         </BrowserRouter>
       </Suspense>    
     </div>

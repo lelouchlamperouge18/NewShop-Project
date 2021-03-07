@@ -7,7 +7,9 @@ import {
     Container, Row, Col,
     Table,
     Button,
-    Toast, ToastBody, ToastHeader 
+    Toast, ToastBody, ToastHeader,
+    Form, FormGroup, Label, Input,
+    Alert
 } from 'reactstrap';
 
 import {
@@ -15,7 +17,8 @@ import {
     listProductAvailable,
     removeFromCart,
     increaseProduct,
-    decreaseProduct
+    decreaseProduct,
+    totalPrice
 } from '../../features/listproduct/listproductSlice';
 
 export function Cartpage() {
@@ -23,6 +26,7 @@ export function Cartpage() {
     const listProduct = useSelector(listProductAvailable);
     const inCartProduct = listProduct.filter(item => item.inCart === true);
     const inCartQuantity = useSelector(forTest);
+    const totalFinalPrice = useSelector(totalPrice);
     return (
         <div className="Cartpage">
             <hr></hr>
@@ -85,7 +89,7 @@ export function Cartpage() {
                     </Col>
                     {inCartQuantity > 0 ? 
                         <Col xs="12" sm="12" md="12" lg="12">
-                        <Table dark>
+                        <Table dark style={{'margin-top':10}}>
                             <thead>
                                 <tr>
                                 <th>#</th>
@@ -129,10 +133,73 @@ export function Cartpage() {
                                 }
                             </tbody>
                         </Table>
-                        </Col>
+                        </Col> 
                         : 
                         <div></div>
                     }
+                    {inCartQuantity > 0 ? 
+                        <Col xs="12" sm="12" md="12" lg="12">
+                            <p style={{'font-size':30}}>TOTAL: {totalFinalPrice} ¥</p>
+                        </Col>
+                        :
+                        <div></div>
+                    }   
+                </Row>
+            </Container>
+            <br></br>
+            <p style={{'color': 'purple', 'font-size': 30}}>CHECKOUT</p>
+            <Container>
+                <Row>
+                    <Col xs="12" sm="12" md="12" className="Cartpage__checkout">
+                        <div className="lienhe__title1">
+                            Contact information
+                        </div>
+                        <Form>
+                            <FormGroup row>
+                                <Label sm={2} className="lienhe__title2">Customer's Name: (*)</Label>
+                                <Col sm={10}>
+                                <Input required type="text" name="name"/>
+                                </Col>
+                            </FormGroup>
+                            <FormGroup row>
+                                <Label sm={2} className="lienhe__title2">Email: </Label>
+                                <Col sm={10}>
+                                <Input type="email" name="email"/>
+                                </Col>
+                            </FormGroup>
+                            <FormGroup row>
+                                <Label sm={2} className="lienhe__title2">Phone Number: (*)</Label>
+                                <Col sm={10}>
+                                <Input required type="number" name="telephone"/>
+                                </Col>
+                            </FormGroup>
+                            <FormGroup row>
+                                <Label sm={2} className="lienhe__title2">Delivery Address : (*)</Label>
+                                <Col sm={10}>
+                                <Input required type="text" name="name"/>
+                                </Col>
+                            </FormGroup>
+                            <FormGroup row>
+                                <Label sm={2} className="lienhe__title2">Note: </Label>
+                                <Col sm={10}>
+                                <Input type="textarea" name="noidung" rows="5"/>
+                                </Col>
+                            </FormGroup>
+                            <FormGroup row>
+                                <Label sm={2}></Label>
+                                <Col sm={10}>
+                                    {totalFinalPrice > 0 ?
+                                        <Button color="danger" className="lienhe__submit">GỬI</Button>
+                                        :
+                                        // <p style={{'color':'red'}}>You need to have at least one item in your cart for payment.</p>
+                                        <Alert color="danger">
+                                            You need to have at least one item in your cart for payment.
+                                        </Alert>
+                                    }
+                                </Col>
+                            </FormGroup>
+                        </Form>
+                    </Col>
                 </Row>
             </Container>
         </div>

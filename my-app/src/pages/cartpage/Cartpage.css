@@ -9,3 +9,33 @@
 .Cartpage__button {
     margin: 0px 10px;
 }
+
+.Cartpage__checkout {
+    /* border: solid 5px rgb(214, 214, 214); */
+    padding: 10px 10px;
+}
+
+.lienhe__title1 {
+    color: black;
+    text-align: left;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0px 0px 10px 0px;
+}
+
+.lienhe__title2 {
+    color: black;
+    text-align: left;
+    font-size: 14px !important
+}
+
+.lienhe__submit {
+    border-radius: 10px !important;
+    padding: 5px 35px !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    color: white !important;
+    background-color: rgb(216, 7, 7) !important;
+    float: left !important;
+}
