@@ -49,12 +49,12 @@ export function Header() {
                         CLOTHES/COSPLAY
                     </DropdownToggle>
                     <DropdownMenu right>
-                        <Link className="navStyle navLinksStyle" to="/clothes">
+                        <Link className="navStyle navLinksStyle" to="/clothes/shirt">
                         <DropdownItem>
                             Shirt/T-Shirt
                         </DropdownItem>
                         </Link>
-                        <Link className="navStyle navLinksStyle" to="/clothes">
+                        <Link className="navStyle navLinksStyle" to="/clothes/cosplay">
                         <DropdownItem>
                             Cosplay Combo
                         </DropdownItem>
@@ -66,17 +66,12 @@ export function Header() {
                         FIGURE
                     </DropdownToggle>
                     <DropdownMenu right>
-                        <Link className="navStyle navLinksStyle" to="/figure">
+                        <Link className="navStyle navLinksStyle" to="/figure/single">
                         <DropdownItem>
-                            Action Figure
+                            Single Figure
                         </DropdownItem>
                         </Link>
-                        <Link className="navStyle navLinksStyle" to="/figure">
-                        <DropdownItem>
-                            Scale Figure
-                        </DropdownItem>
-                        </Link>
-                        <Link className="navStyle navLinksStyle" to="/figure">
+                        <Link className="navStyle navLinksStyle" to="/figure/combo">
                         <DropdownItem>
                             Combo Figure
                         </DropdownItem>
@@ -88,22 +83,22 @@ export function Header() {
                         OTHERS ACCESSORIES
                     </DropdownToggle>
                     <DropdownMenu right>
-                        <Link className="navStyle navLinksStyle" to="/others-accessories">
+                        <Link className="navStyle navLinksStyle" to="/others-accessories/balo">
                         <DropdownItem>
                             Balo
                         </DropdownItem>
                         </Link>
-                        <Link className="navStyle navLinksStyle" to="/others-accessories">
+                        <Link className="navStyle navLinksStyle" to="/others-accessories/jewelry">
                         <DropdownItem>
                             Jewelry
                         </DropdownItem>
                         </Link>
-                        <Link className="navStyle navLinksStyle" to="/others-accessories">
+                        <Link className="navStyle navLinksStyle" to="/others-accessories/stuffedtoy">
                         <DropdownItem>
                             Stuffed Toy
                         </DropdownItem>
                         </Link>
-                        <Link className="navStyle navLinksStyle" to="/others-accessories">
+                        <Link className="navStyle navLinksStyle" to="/others-accessories/others">
                         <DropdownItem>
                             Others
                         </DropdownItem>

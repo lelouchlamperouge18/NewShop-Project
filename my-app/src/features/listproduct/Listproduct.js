@@ -2,11 +2,7 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 // import styles from './Listproduct.module.css';
-// import { Redirect } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'reactstrap'
-import {
-    selectCount
-} from '../../features/counter/counterSlice';
 import {
     listProductAvailable
 } from '../../features/listproduct/listproductSlice';
@@ -17,13 +13,11 @@ import {
 import defaultPath from '../../assets/photos/kagome.jpg';
 
 export function Listproduct() {
-    // const count = useSelector(selectCount); 
     const dispatch = useDispatch();
     const listofProduct = useSelector(listProductAvailable);
     const quantityProduct = listofProduct.length;
     return (
         <div className="Listproduct">
-            {/* NEW COUNTER: {count}  */}
             <br></br>
             <p style={{'color': 'purple', 'font-size': 30}}>LIST PRODUCTS</p>
             <p> Hiện có {quantityProduct} sản phẩm </p>

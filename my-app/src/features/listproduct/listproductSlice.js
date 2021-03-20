@@ -43,6 +43,41 @@ import img38 from '../../assets/products/38.jpg'
 import img39 from '../../assets/products/39.jpg'
 import img40 from '../../assets/products/40.jpg'
 
+import img41 from '../../assets/products/41.jpg'
+import img42 from '../../assets/products/42.jpg'
+import img43 from '../../assets/products/43.jpg'
+import img44 from '../../assets/products/44.jpg'
+
+import img45 from '../../assets/products/45.jpg'
+import img46 from '../../assets/products/46.jpg'
+import img47 from '../../assets/products/47.jpg'
+import img48 from '../../assets/products/48.jpg'
+import img49 from '../../assets/products/49.jpg'
+import img50 from '../../assets/products/50.jpg'
+
+import img51 from '../../assets/products/51.jpg'
+import img52 from '../../assets/products/52.jpg'
+import img53 from '../../assets/products/53.jpg'
+import img54 from '../../assets/products/54.jpg'
+import img55 from '../../assets/products/55.jpg'
+import img56 from '../../assets/products/56.jpg'
+
+import img57 from '../../assets/products/57.jpg'
+import img58 from '../../assets/products/58.jpeg'
+import img59 from '../../assets/products/59.jpg'
+import img60 from '../../assets/products/60.jpg'
+import img61 from '../../assets/products/61.jpg'
+import img62 from '../../assets/products/62.jpg'
+import img63 from '../../assets/products/63.jpeg'
+import img64 from '../../assets/products/64.jpg'
+import img65 from '../../assets/products/65.jpg'
+import img66 from '../../assets/products/66.jpg'
+
+import img67 from '../../assets/products/67.jpg'
+import img68 from '../../assets/products/68.jpg'
+import img69 from '../../assets/products/69.jpg'
+import img70 from '../../assets/products/70.jpg'
+
 export const listproductSlice = createSlice({
   name: 'listproduct',
   initialState: {
@@ -101,17 +136,52 @@ export const listproductSlice = createSlice({
       {productID: 32, productName: 'Figure Hatsune Miku', price: 1000, discount: 0, status: 'Available', rate: 0, description: 'Description default', imagePath: img32, subcategoriesID: 3, inCart: false, numberInCart: 0},
       {productID: 33, productName: 'Hatsune Miku Limited', price: 10000, discount: 20, status: 'Available', rate: 0, description: 'Description default', imagePath: img33, subcategoriesID: 3, inCart: false, numberInCart: 0},
       {productID: 34, productName: 'Hot Fate/ Apocrypha Astolfo Swimsuit Ver.', price: 1500, discount: 20, status: 'Available', rate: 0, description: 'Description default', imagePath: img34, subcategoriesID: 3, inCart: false, numberInCart: 0},
-      {productID: 35, productName: 'One Piece ZORO Figure', price: 2200, discount: 20, status: 'Available', rate: 0, description: 'Description default', imagePath: img35, subcategoriesID: 3, inCart: false, numberInCart: 0},
+      {productID: 35, productName: 'One Piece ZORO Figure', price: 2200, discount: 20, status: 'Out of stock', rate: 0, description: 'Description default', imagePath: img35, subcategoriesID: 3, inCart: false, numberInCart: 0},
       {productID: 36, productName: 'SAO Asuna Figure', price: 2220, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img36, subcategoriesID: 3, inCart: false, numberInCart: 0},
       {productID: 37, productName: 'Charlotte Tomori Nao Figure', price: 3330, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img37, subcategoriesID: 3, inCart: false, numberInCart: 0},
       {productID: 38, productName: 'Kobayashi-san no Maid Dragon Figure', price: 4400, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img38, subcategoriesID: 3, inCart: false, numberInCart: 0},
       {productID: 39, productName: 'Nendoroid Nekopara Chocola', price: 7000, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img39, subcategoriesID: 3, inCart: false, numberInCart: 0},
-      {productID: 40, productName: 'Figure Nekopara Vanilla', price: 7000, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img40, subcategoriesID: 3, inCart: false, numberInCart: 0}
+      {productID: 40, productName: 'Figure Nekopara Vanilla', price: 7000, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img40, subcategoriesID: 3, inCart: false, numberInCart: 0},
+
+      {productID: 41, productName: 'Combo Naruto', price: 6000, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img41, subcategoriesID: 4, inCart: false, numberInCart: 0},
+      {productID: 42, productName: 'Combo Date A Live', price: 6000, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img42, subcategoriesID: 4, inCart: false, numberInCart: 0},
+      {productID: 43, productName: 'Combo One Piece', price: 5000, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img43, subcategoriesID: 4, inCart: false, numberInCart: 0},
+      {productID: 44, productName: 'Combo Dragon Ball', price: 20000, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img44, subcategoriesID: 4, inCart: false, numberInCart: 0},
+
+      {productID: 45, productName: 'Balo Neko Sensei', price: 600, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img45, subcategoriesID: 5, inCart: false, numberInCart: 0},
+      {productID: 46, productName: 'Balo Naruto', price: 600, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img46, subcategoriesID: 5, inCart: false, numberInCart: 0},
+      {productID: 47, productName: 'Balo Umaru', price: 500, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img47, subcategoriesID: 5, inCart: false, numberInCart: 0},
+      {productID: 48, productName: 'Balo One Piece', price: 280, discount: 5, status: 'Out of stock', rate: 0, description: 'Description default', imagePath: img48, subcategoriesID: 5, inCart: false, numberInCart: 0},
+      {productID: 49, productName: 'Balo Code Geass', price: 250, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img49, subcategoriesID: 5, inCart: false, numberInCart: 0},
+      {productID: 50, productName: 'Balo Uchiha Sharingan', price: 6000, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img50, subcategoriesID: 5, inCart: false, numberInCart: 0},
+
+      {productID: 51, productName: 'No Face "Kaonashi" Spirit in a Glass Dome Pendant Necklace', price: 500, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img51, subcategoriesID: 6, inCart: false, numberInCart: 0},
+      {productID: 52, productName: 'Dainty Anime Jewelry from Apollo Box', price: 600, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img52, subcategoriesID: 6, inCart: false, numberInCart: 0},
+      {productID: 53, productName: 'Naruto Sharingan Shippuuden Eyes Glass', price: 2000, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img53, subcategoriesID: 6, inCart: false, numberInCart: 0},
+      {productID: 54, productName: 'Tsunade Necklace', price: 1000, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img54, subcategoriesID: 6, inCart: false, numberInCart: 0},
+      {productID: 55, productName: 'Card Captor Sakura Yukito Tsukishiro', price: 600, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img55, subcategoriesID: 6, inCart: false, numberInCart: 0},
+      {productID: 56, productName: 'Seishun Buta Yarou Series Sakurajima Hairclip', price: 100, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img56, subcategoriesID: 6, inCart: false, numberInCart: 0},
+
+      {productID: 57, productName: 'Umaru-chan Stuffed', price: 600, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img57, subcategoriesID: 7, inCart: false, numberInCart: 0},
+      {productID: 58, productName: 'Kurama Nine-Tails Fox Stuffed Toy', price: 450, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img58, subcategoriesID: 7, inCart: false, numberInCart: 0},
+      {productID: 59, productName: 'Ghibli My Neighbor Totoro Stuffed', price: 650, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img59, subcategoriesID: 7, inCart: false, numberInCart: 0},
+      {productID: 60, productName: 'Anime Azur Lane John Cute Cat Plush Doll Soft Stuffed Animal Toy', price: 700, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: img60, subcategoriesID: 7, inCart: false, numberInCart: 0},
+      {productID: 61, productName: 'Doraemon Stuff Stuffed Toy', price: 700, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img61, subcategoriesID: 7, inCart: false, numberInCart: 0},
+      {productID: 62, productName: 'Naruto Pakkun Dog 30CM Plush Toys Soft Stuffed Animals', price: 700, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img62, subcategoriesID: 7, inCart: false, numberInCart: 0},
+      {productID: 63, productName: 'Kini Squirtle Pokemon', price: 700, discount: 15, status: 'Available', rate: 0, description: 'Description default', imagePath: img63, subcategoriesID: 7, inCart: false, numberInCart: 0},
+      {productID: 64, productName: 'Usagi Keychain Plush Stuffed Toy', price: 300, discount: 5, status: 'Available', rate: 0, description: 'Description default', imagePath: img64, subcategoriesID: 7, inCart: false, numberInCart: 0},
+      {productID: 65, productName: 'Kimetsu no Yaiba Kibutsuji Muzan Plush Doll 20cm Stuffed', price: 800, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img65, subcategoriesID: 7, inCart: false, numberInCart: 0},
+      {productID: 66, productName: 'Attack on Titan USJ Levi Stuffed Toy', price: 260, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img66, subcategoriesID: 7, inCart: false, numberInCart: 0},
+
+      {productID: 67, productName: 'Combo Shuriken + Kunai Naruto', price: 5000, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img67, subcategoriesID: 8, inCart: false, numberInCart: 0},
+      {productID: 68, productName: 'Set 6 Kimetsu No Yaiba', price: 5000, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img68, subcategoriesID: 8, inCart: false, numberInCart: 0},
+      {productID: 69, productName: 'Kimetsu no Yaiba Paper Fans', price: 5000, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img69, subcategoriesID: 8, inCart: false, numberInCart: 0},
+      {productID: 70, productName: 'Sandals One Piece Luffy', price: 5000, discount: 10, status: 'Available', rate: 0, description: 'Description default', imagePath: img70, subcategoriesID: 8, inCart: false, numberInCart: 0}
     ],
   },
   reducers: {
     doNothing: state => {
-      state.inCartQuantity= 1;
+      state.inCartQuantity = 1;
     },
     addToCart: (state, action) => {
       if (state.product[action.payload].inCart === true) {
@@ -146,5 +216,14 @@ export const listSubCategoriesAvailable = state => state.listproduct.subcategori
 export const listProductAvailable = state => state.listproduct.product;
 export const forTest = state => state.listproduct.inCartQuantity;
 export const totalPrice = state => state.listproduct.product.filter(item => item.inCart === true).reduce(function(a,b) {return a + b.numberInCart*b.price*(100-b.discount)/100;},0);
+
+export const listClothesShirt = state => state.listproduct.product.filter(item => item.subcategoriesID === 1);
+export const listClothesCosplay = state => state.listproduct.product.filter(item => item.subcategoriesID === 2);
+export const listFigureSingle = state => state.listproduct.product.filter(item => item.subcategoriesID === 3);
+export const listFigureCombo = state => state.listproduct.product.filter(item => item.subcategoriesID === 4);
+export const listOtheraccessoriesBalo = state => state.listproduct.product.filter(item => item.subcategoriesID === 5);
+export const listOtheraccessoriesJewelry = state => state.listproduct.product.filter(item => item.subcategoriesID === 6);
+export const listOtheraccessoriesStuffedtoy = state => state.listproduct.product.filter(item => item.subcategoriesID === 7);
+export const listOtheraccessoriesOthers = state => state.listproduct.product.filter(item => item.subcategoriesID === 8);
 
 export default listproductSlice.reducer;

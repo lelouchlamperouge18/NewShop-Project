@@ -13,6 +13,7 @@ export const Singlepostpage = ({match}) => {
     const dispatch = useDispatch();
     const { productID } = match.params;
     console.log("TEST 1: " + productID);
+    // console.log("sahd: " + match);
     // const singleProduct = useSelector((state) =>
     //     state.listproduct.product.find((item) => item.productID === productID)
     // )
@@ -23,7 +24,7 @@ export const Singlepostpage = ({match}) => {
         return (
             <div className="Singlepostpage">
                 <br></br>
-                <h1> NOT FOUND!</h1>
+                <h1> SORRY 😭! THIS PAGE NOT FOUND!</h1>
             </div>            
         )
     } else 
@@ -52,7 +53,11 @@ export const Singlepostpage = ({match}) => {
                                     {singleProduct.description}
                                 </div>
                                 <div className="Singlepostpage__status">
-                                    Status: {singleProduct.status}
+                                    {singleProduct.status === 'Available' ?
+                                        <p>Status: <b style={{'color':'green'}}> {singleProduct.status}</b></p>
+                                        :
+                                        <p>Status: <b style={{'color':'red'}}> {singleProduct.status}</b></p>                      
+                                    }                                 
                                 </div>
                                 <div className="Singlepostpage__realprice">
                                     {singleProduct.price*(100-singleProduct.discount)/100} ¥
@@ -82,5 +87,4 @@ export const Singlepostpage = ({match}) => {
             </Container>
         </div>
     )
-
 }

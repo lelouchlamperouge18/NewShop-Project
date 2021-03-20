@@ -48,45 +48,9 @@ export function Cartpage() {
             <Link to="/new">
                 <Button >↻ BACK TO MAIN SHOP </Button>
             </Link>  
-            <hr></hr>
+            <br></br>
             <Container>
                 <Row>
-                    <Col xs="12" sm="4" md="4" lg="4">
-                        <div className="p-3 bg-success my-2 rounded">
-                            <Toast>
-                            <ToastHeader>
-                                PRODUCT WARRANTY 
-                            </ToastHeader>
-                            <ToastBody>
-                                <strong style={{'font-size': 20}}>⌚ 90 DAYS</strong>
-                            </ToastBody>
-                            </Toast>
-                        </div>
-                    </Col>
-                    <Col xs="12" sm="4" md="4" lg="4">
-                        <div className="p-3 bg-info my-2 rounded">
-                            <Toast>
-                            <ToastHeader>
-                                FREE CHANGES 
-                            </ToastHeader>
-                            <ToastBody>
-                                <strong style={{'font-size': 20}}>⌛ 48 HOURS</strong>
-                            </ToastBody>
-                            </Toast>
-                        </div>
-                    </Col>
-                    <Col xs="12" sm="4" md="4" lg="4">
-                        <div className="p-3 bg-danger my-2 rounded">
-                            <Toast>
-                            <ToastHeader>
-                                HOTLINE
-                            </ToastHeader>
-                            <ToastBody>
-                                <strong style={{'font-size': 20}}>✆ 0123456789</strong>
-                            </ToastBody>
-                            </Toast>
-                        </div>
-                    </Col>
                     {inCartQuantity > 0 ? 
                         <Col xs="12" sm="12" md="12" lg="12">
                         <Table dark style={{'margin-top':10}}>
@@ -146,7 +110,7 @@ export function Cartpage() {
                     }   
                 </Row>
             </Container>
-            <br></br>
+            <hr></hr>
             <p style={{'color': 'purple', 'font-size': 30}}>CHECKOUT</p>
             <Container>
                 <Row>
@@ -189,7 +153,9 @@ export function Cartpage() {
                                 <Label sm={2}></Label>
                                 <Col sm={10}>
                                     {totalFinalPrice > 0 ?
-                                        <Button color="danger" className="lienhe__submit">GỬI</Button>
+                                        // <Link to="/cartpage">
+                                            <Button color="danger" className="lienhe__submit">GỬI</Button>
+                                        // </Link>
                                         :
                                         // <p style={{'color':'red'}}>You need to have at least one item in your cart for payment.</p>
                                         <Alert color="danger">
@@ -199,6 +165,46 @@ export function Cartpage() {
                                 </Col>
                             </FormGroup>
                         </Form>
+                    </Col>
+                </Row>
+            </Container>
+            <Container>
+                <Row>
+                    <Col xs="12" sm="4" md="4" lg="4">
+                        <div className="p-3 bg-success my-2 rounded">
+                            <Toast>
+                            <ToastHeader>
+                                PRODUCT WARRANTY 
+                            </ToastHeader>
+                            <ToastBody>
+                                <strong style={{'font-size': 20}}>⌚ 90 DAYS</strong>
+                            </ToastBody>
+                            </Toast>
+                        </div>
+                    </Col>
+                    <Col xs="12" sm="4" md="4" lg="4">
+                        <div className="p-3 bg-info my-2 rounded">
+                            <Toast>
+                            <ToastHeader>
+                                FREE CHANGES 
+                            </ToastHeader>
+                            <ToastBody>
+                                <strong style={{'font-size': 20}}>⌛ 48 HOURS</strong>
+                            </ToastBody>
+                            </Toast>
+                        </div>
+                    </Col>
+                    <Col xs="12" sm="4" md="4" lg="4">
+                        <div className="p-3 bg-danger my-2 rounded">
+                            <Toast>
+                            <ToastHeader>
+                                HOTLINE
+                            </ToastHeader>
+                            <ToastBody>
+                                <strong style={{'font-size': 20}}>✆ 0123456789</strong>
+                            </ToastBody>
+                            </Toast>
+                        </div>
                     </Col>
                 </Row>
             </Container>
