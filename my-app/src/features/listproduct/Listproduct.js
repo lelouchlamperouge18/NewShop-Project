@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 // import styles from './Listproduct.module.css';
@@ -7,7 +7,6 @@ import {
     listProductAvailable
 } from '../../features/listproduct/listproductSlice';
 import {
-    doNothing, 
     addToCart
 } from './listproductSlice'
 import defaultPath from '../../assets/photos/kagome.jpg';

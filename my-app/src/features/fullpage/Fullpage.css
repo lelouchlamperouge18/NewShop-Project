@@ -1,0 +1,9 @@
+.Fullpage {
+    margin-top: -86px !important;
+}
+
+.section p {
+    text-align: center;
+    font-size: 3rem;
+    /* background-color: rgb(1, 66, 66) !important; */
+}

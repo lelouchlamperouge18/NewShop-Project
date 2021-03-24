@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import { Container, Row, Col, Button } from 'reactstrap'
 import './Footer.css';
   

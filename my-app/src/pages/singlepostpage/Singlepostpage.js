@@ -7,6 +7,7 @@ import {
     addToCart
 } from '../../features/listproduct/listproductSlice';
 import image748 from '../../assets/photos/748.PNG'
+import pricetag from '../../assets/photos/price-tag.svg'
 import defaultPath from '../../assets/photos/kagome.jpg';
 
 export const Singlepostpage = ({match}) => {
@@ -60,6 +61,7 @@ export const Singlepostpage = ({match}) => {
                                     }                                 
                                 </div>
                                 <div className="Singlepostpage__realprice">
+                                    <img src={pricetag} alt="price-tag" style={{"margin-right":11,"margin-bottom":7}}></img>                   
                                     {singleProduct.price*(100-singleProduct.discount)/100} ¥
                                 </div>
                                 <div className="Singlepostpage__price">

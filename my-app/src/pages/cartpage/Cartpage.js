@@ -27,10 +27,10 @@ export function Cartpage() {
     const inCartProduct = listProduct.filter(item => item.inCart === true);
     const inCartQuantity = useSelector(forTest);
     const totalFinalPrice = useSelector(totalPrice);
+    // console.log(inCartProduct);
     return (
         <div className="Cartpage">
-            <hr></hr>
-            <p style={{'color': 'purple', 'font-size': 30}}>YOUR CART</p>
+            <p style={{'color': 'purple', 'font-size': 30, 'margin-top': 20}}>YOUR CART</p>
             {inCartQuantity === 0 ?
                 <div>
                     <p>Nothing in your cart</p>                   
