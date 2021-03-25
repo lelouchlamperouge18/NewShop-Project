@@ -9,6 +9,11 @@ import {
 
 const items = [
   {
+    src: 'https://theme.hstatic.net/1000341902/1000629852/14/slideshow_3.jpg?v=336',
+    altText: 'Aodai Collection',
+    caption: 'Aodai Collection'
+  },
+  {
     // src: 'https://theme.hstatic.net/1000341902/1000629852/14/slideshow_4.jpg?v=336',
     // altText: 'Spring Collection',
     // caption: 'Spring Collection'
@@ -20,11 +25,6 @@ const items = [
     src: 'https://leika.vn/wp-content/uploads/2019/05/happy-mother-day-anh-bia.jpg',
     altText: 'Happy Mothers Day 2021',
     caption: 'Happy Mothers Day 2021'
-  },
-  {
-    src: 'https://theme.hstatic.net/1000341902/1000629852/14/slideshow_3.jpg?v=336',
-    altText: 'Aodai Collection',
-    caption: 'Aodai Collection'
   }
 ];
 

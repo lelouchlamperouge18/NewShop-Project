@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import {
   Collapse,
   Navbar,
@@ -15,10 +16,15 @@ import {
   Container,
   Tooltip
 } from 'reactstrap';
+import {
+    forTest,
+} from '../../features/listproduct/listproductSlice';
 import logo from '../../assets/photos/logo2.png';
 import './Header.css';
 
 export function Header() {
+    const inCartQuantity = useSelector(forTest);
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
@@ -121,7 +127,7 @@ export function Header() {
                         </svg>
                     </Link>    
                     <Tooltip placement="bottom" isOpen={tooltipOpen} target="cart__icon" toggle={toggle2}>
-                        Check your cart!
+                        Check your cart! ({inCartQuantity})
                     </Tooltip>         
                 </NavItem>
             </Nav>

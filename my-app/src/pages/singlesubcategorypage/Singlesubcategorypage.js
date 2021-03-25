@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useLocation } from 'react-router';
 import './Singlesubcategorypage.css'
-import { Container, Row, Col, Button } from 'reactstrap'
+import { Container, Row, Col, Button, Breadcrumb, BreadcrumbItem } from 'reactstrap'
 import { Link } from 'react-router-dom';
 
 import {
@@ -24,15 +24,35 @@ import {
 export const Singlesubcategorypage = ({match}) => {
     const dispatch = useDispatch();
     const location = useLocation();
-    var temp;
-    if (location.pathname === '/clothes/shirt') temp = listClothesShirt;
-    if (location.pathname === '/clothes/cosplay') temp = listClothesCosplay;
-    if (location.pathname === '/figure/single') temp = listFigureSingle;
-    if (location.pathname === '/figure/combo') temp = listFigureCombo;
-    if (location.pathname === '/others-accessories/balo') temp = listOtheraccessoriesBalo;
-    if (location.pathname === '/others-accessories/jewelry') temp = listOtheraccessoriesJewelry;
-    if (location.pathname === '/others-accessories/stuffedtoy') temp = listOtheraccessoriesStuffedtoy;
-    if (location.pathname === '/others-accessories/others') temp = listOtheraccessoriesOthers;
+    var temp, breadParents = '', breadChildren = '';
+    switch (location.pathname) {
+        case '/clothes/shirt':
+            [temp, breadParents, breadChildren] = [listClothesShirt, 'Clothers', 'Shirt'];
+            break;
+        case '/clothes/cosplay':
+            [temp, breadParents, breadChildren] = [listClothesCosplay, 'Clothers', 'Cosplay'];
+            break;
+        case '/figure/single':
+            [temp, breadParents, breadChildren] = [listFigureSingle, 'Figure', 'Single'];
+            break;
+        case '/figure/combo':
+            [temp, breadParents, breadChildren] = [listFigureCombo, 'Figure', 'Combo'];
+            break;
+        case '/others-accessories/balo':
+            [temp, breadParents, breadChildren] = [listOtheraccessoriesBalo, 'Others Accesssories', 'Balo'];
+            break;
+        case '/others-accessories/jewelry':
+            [temp, breadParents, breadChildren] = [listOtheraccessoriesJewelry, 'Others Accesssories', 'Jewelry'];
+            break;
+        case '/others-accessories/stuffedtoy':
+            [temp, breadParents, breadChildren] = [listOtheraccessoriesStuffedtoy, 'Others Accesssories', 'Stuffed Toy'];
+            break;
+        case '/others-accessories/others':
+            [temp, breadParents, breadChildren] = [listOtheraccessoriesOthers, 'Others Accesssories', 'Others'];
+            break;
+        default:
+            break;
+    }
 
     const listProductOfSub = useSelector(temp);
 
@@ -41,6 +61,17 @@ export const Singlesubcategorypage = ({match}) => {
             <br></br>
             <br></br>
             <Container>
+                <Row>
+                    <Col xs="12" sm="12" md="12" lg="12">
+                        <Breadcrumb>
+                            <BreadcrumbItem>
+                                <Link to="/">Home</Link>
+                            </BreadcrumbItem>
+                            <BreadcrumbItem>{breadParents}</BreadcrumbItem>
+                            <BreadcrumbItem active>{breadChildren}</BreadcrumbItem>
+                        </Breadcrumb>
+                    </Col>
+                </Row>
                 <Row>
                 {listProductOfSub.map((item, index) => (
                     <Col xs="6" sm="6" md="4" lg="3">

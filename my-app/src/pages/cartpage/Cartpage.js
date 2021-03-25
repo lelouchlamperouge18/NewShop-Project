@@ -68,7 +68,7 @@ export function Cartpage() {
                                 {inCartProduct.map((item, index) => (
                                     <tr>
                                         <th scope="row">{index+1}</th>
-                                        <td>{item.productName}</td>
+                                        <td>({item.productID}) {item.productName}</td>
                                         <td> 
                                             <Button className="Cartpage__button" color="secondary" onClick={() => dispatch(decreaseProduct(item.productID))}>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-dash" viewBox="0 0 16 16">
@@ -153,12 +153,9 @@ export function Cartpage() {
                                 <Label sm={2}></Label>
                                 <Col sm={10}>
                                     {totalFinalPrice > 0 ?
-                                        // <Link to="/cartpage">
-                                            <Button color="danger" className="lienhe__submit">GỬI</Button>
-                                        // </Link>
+                                        <Button color="danger" style={{'transition': '1s'}} className="lienhe__submit">SEND</Button>
                                         :
-                                        // <p style={{'color':'red'}}>You need to have at least one item in your cart for payment.</p>
-                                        <Alert color="danger">
+                                        <Alert color="danger" style={{'transition': '1s'}}>
                                             You need to have at least one item in your cart for payment.
                                         </Alert>
                                     }

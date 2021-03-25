@@ -10,11 +10,13 @@ export function Footer() {
                     <Container>
                         <Row>
                             <Col xs="12" sm="5" md="5">
-                                <div className="footer__title">LIÊN HỆ VỚI CHÚNG TÔI</div>
+                                <div className="footer__title">CONTACT WITH US</div>
                                 <div className="footer__info">
-                                    Địa chỉ: Shirakawa-go, Japan
+                                    Address: Shirakawa-go, Japan
                                     <br></br>
-                                    Email: info@otakushop - Điện thoại: 0123456789
+                                    Email: info@otakushop - Phone: 0123456789
+                                    <br></br>
+                                    Copyright © 2021 Cong Son Hoang (L.L) - HCMUS
                                     <br></br>
                                 </div>
                                 <div className="footer__title">SUBCRIBE in OUR NEWS LETTER</div>
@@ -24,31 +26,31 @@ export function Footer() {
                             <Col xs="12" sm="7" md="7">
                                 <Row>
                                     <Col xs="4" sm="4" md="4">
-                                        <div className="footer__title">GIỚI THIỆU</div>
+                                        <div className="footer__title">INTRODUCTION</div>
                                         <ul className="footer__list">
-                                            <li>Thông tin công ty</li>
-                                            <li>Lịch sử hình thành</li>
-                                            <li>Tầm nhìn & Phát triển</li>
-                                            <li>Quy định & điều khoản</li>
-                                            <li>Trang cá nhân</li>
+                                            <li>Company Information</li>
+                                            <li>Hitsory Of Company</li>
+                                            <li>Vision & Development </li>
+                                            <li>Terms & Conditions</li>
+                                            <li>Profile</li>
                                         </ul>
                                     </Col>
                                     <Col xs="4" sm="4" md="4">
-                                        <div className="footer__title">SẢN PHẨM</div>
+                                        <div className="footer__title">PRODUCTS</div>
                                         <ul className="footer__list">
-                                            <li>Sản phẩm mới nhất</li>
-                                            <li>Sản phẩm tiêu biểu</li>
-                                            <li>Sản phẩm HOT</li>
-                                            <li>Sản phẩm bán chạy</li>
+                                            <li>Newest Products</li>
+                                            <li>Typical Products</li>
+                                            <li>Hot Products</li>
+                                            <li>Very Hot Products</li>
                                         </ul>
                                     </Col>
                                     <Col xs="4" sm="4" md="4">
                                         <div className="footer__title">TIN TỨC</div>
                                         <ul className="footer__list">
-                                            <li>Tin tức tổng hợp</li>
-                                            <li>Tin công ty</li>
-                                            <li>Tin thị trường</li>
-                                            <li>Tin khác</li>
+                                            <li>General News </li>
+                                            <li>TCompany News</li>
+                                            <li>Market News</li>
+                                            <li>Others News</li>
                                         </ul>
                                     </Col>
                                 </Row>

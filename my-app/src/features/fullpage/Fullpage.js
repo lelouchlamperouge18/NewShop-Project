@@ -17,7 +17,7 @@ export function Fullpage() {
                 licenseKey = {'YOUR_KEY_HERE'}
                 scrollingSpeed = {1000}
                 scrollOverflow={true}
-                sectionsColor = {['#CCFF99', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000']}
+                sectionsColor = {['#4BBFC3', '#CCFF99', '#7BAABE', 'whitesmoke', '#000']}
                 render={({ state, fullpageApi }) => {
                 return (
                     <ReactFullpage.Wrapper>
@@ -41,7 +41,7 @@ export function Fullpage() {
                         <p> 
                             Phone: 0123456789 <br></br>
                             Email: info@otakushop <br></br>
-                            <img alt="img" height={250} src="https://lh3.googleusercontent.com/proxy/jcFllG2IZIE3Lt3uh3hAuGyhEiFCZibbjrsTiVgAkYcOalSW1EwoWZ5xsWQMV_ICj4ari-89HRhS7JIA8tAmwPCvd7v3Mb59i0PcAyDB"></img>
+                            <img alt="img" height={250} src="https://static.wikia.nocookie.net/p__/images/2/28/Moroha.png/revision/latest?cb=20200719050641&path-prefix=protagonist"></img>
                         </p>
                         <Button color="secondary" onClick={() => fullpageApi.moveSectionDown()}>
                             Click me to move down
@@ -51,7 +51,7 @@ export function Fullpage() {
                         <p>
                             Website made by Cong Son Hoang <br></br>                 
                             (Lelouch Vi Britannia) <br></br>
-                            <img alt="img" height={250} src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/dd1j4j0-df87620c-070f-4896-990c-c444944041a1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvODRkYzEzYjctYTJlNy00YjQ1LTgzZWMtMzExZTcyZTgyOTAwXC9kZDFqNGowLWRmODc2MjBjLTA3MGYtNDg5Ni05OTBjLWM0NDQ5NDQwNDFhMS5naWYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.5JXAeWUpVCcXFAO6DkE9iAc_z24v2kmKqfpQHbJV0ZU"></img>
+                            <img alt="img" height={250} src="https://steamuserimages-a.akamaihd.net/ugc/963099873035049668/397B115E5FF3FE0D1034C20E36063D631A5C4002/"></img>
                         </p>
                         <Button color="secondary" onClick={() => fullpageApi.moveTo(1, 0)}>
                             Click to back to the top
