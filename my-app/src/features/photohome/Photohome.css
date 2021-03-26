@@ -1,0 +1,20 @@
+div#ReactSimpleImageViewer {
+    z-index: 9999 !important;
+    background-color: rgba(0,0,0,0.95) !important;
+}
+
+.Photohome__bigtitle {
+    padding: 50px 0px 0px 0px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.Photohome__smalltitle {
+    padding: 10px 0px 40px 0px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    font-weight: 600;
+    font-size: 17px;
+}

@@ -33,6 +33,7 @@ export const Singlepostpage = ({match}) => {
         <div className="Singlepostpage">
             <br></br>
             <Container>
+                <br></br>
                 <Row>
                     <Col xs="12" sm="8" md="9" lg="9">
                         <Row>

@@ -45,10 +45,10 @@ export function Footer() {
                                         </ul>
                                     </Col>
                                     <Col xs="4" sm="4" md="4">
-                                        <div className="footer__title">TIN TỨC</div>
+                                        <div className="footer__title">NEWS</div>
                                         <ul className="footer__list">
                                             <li>General News </li>
-                                            <li>TCompany News</li>
+                                            <li>Company News</li>
                                             <li>Market News</li>
                                             <li>Others News</li>
                                         </ul>

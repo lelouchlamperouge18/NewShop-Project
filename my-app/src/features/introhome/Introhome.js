@@ -67,7 +67,7 @@ export function Introhome() {
                         </div>
                         <div className="Introhome__youtube">
                         <iframe 
-                            width="700" height="410"
+                            width="660" height="400"
                             src="https://www.youtube.com/embed/kgM3uUEMbYk">
                         </iframe>
                         </div>
