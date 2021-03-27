@@ -36,7 +36,7 @@ function App() {
           </Switch>
 
           <Footer />
-        </BrowserRouter>
+        </BrowserRouter> 
       </Suspense>    
     </div>
   );

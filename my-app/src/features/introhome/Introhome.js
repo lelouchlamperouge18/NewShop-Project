@@ -63,7 +63,7 @@ export function Introhome() {
                             WANT TO KNOW MORE ABOUT US?
                         </div>
                         <div className="Introhome__smalltitle">
-                            Subcribe our Youtube channel to follow the latest videos
+                        📢 Subcribe our Youtube channel to follow the latest videos 🌺
                         </div>
                         <div className="Introhome__youtube">
                         <iframe 

@@ -5,10 +5,10 @@ import './Photohome.css';
 
 import ImgsViewer from 'react-images-viewer'; //khựa, ko dùng đc function component
 import { render } from "react-dom";
-import ImageViewer from "react-simple-image-viewer"; //bị che bởi header
+import ImageViewer from "react-simple-image-viewer"; //bị che bởi header, đã fixed hehe
 import Lightbox from 'react-lightbox-component'; //lỗi j éo hiểu
 
-import gallery1 from '../../assets/photos/gallery1.png'
+import gallery1 from '../../assets/photos/gallery1.jpg'
 import gallery2 from '../../assets/photos/gallery2.jpg'
 import gallery3 from '../../assets/photos/gallery3.jpg'
 import gallery4 from '../../assets/photos/gallery4.jpg'
@@ -26,6 +26,7 @@ import gallery15 from '../../assets/photos/gallery15.jpg'
 import gallery16 from '../../assets/photos/gallery16.jpg'
 import gallery17 from '../../assets/photos/gallery17.jpg'
 import gallery18 from '../../assets/photos/gallery18.jpg'
+import { Covid19 } from './Covid19';
 
 export function Photohome() {
     const [currentImage, setCurrentImage] = useState(0);
@@ -70,18 +71,19 @@ export function Photohome() {
                             OUR JOURNEY GALLERY
                         </div>
                         <div className="Photohome__smalltitle">
-                            Memories warm me up from inside, but sometimes they tear me apart
+                        💖 Memories warm me up from inside, but sometimes they tear me apart 💔
                         </div>
                     </Col>
                 </Row>
             </Container>
+          
            {images.map((src, index) => (
                 <img
                     src={ src }
                     onClick={ () => openImageViewer(index) }
-                    width="270"
+                    width="265"
                     key={ index }
-                    style={{ margin: '2px', 'border-radius':'2px'}}
+                    style={{ 'margin': '4px', 'border-radius':'3px', 'cursor':'pointer'}}
                     alt=""
                 />
             ))}
@@ -93,6 +95,23 @@ export function Photohome() {
                     onClose={ closeImageViewer }                    
                 />
             )}
+
+            {/* TEMPOARY AREA */}
+            <Container>
+                <Row>
+                    <Col xs="12" sm="12" md="12" lg="12">
+                        <br></br>
+                        <div className="Photohome__bigtitle">
+                            Join hands to repel the epidemic of Covid 
+                        </div>
+                        <div className="Photohome__smalltitle">
+                        ⚜️ Mental health & COVID-19: https://www.who.int/teams/mental-health-and-substance-use/covid-19 ⚜️
+                        </div>
+                        <Covid19 />
+                    </Col>
+                </Row>
+            </Container>
+            {/* TEMPOARY AREA */}
         </div>
     )
 }
