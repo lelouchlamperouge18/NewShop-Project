@@ -6,26 +6,39 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
+import './Carousel.css'
 
 const items = [
   {
-    src: 'https://theme.hstatic.net/1000341902/1000629852/14/slideshow_3.jpg?v=336',
-    altText: 'Aodai Collection',
-    caption: 'Aodai Collection'
+    src: 'https://cdn.statically.io/img/wallpaperaccess.com/full/799571.png',
+    altText: 'Winter Japan',
+    caption: 'Winter Japan'
   },
   {
-    // src: 'https://theme.hstatic.net/1000341902/1000629852/14/slideshow_4.jpg?v=336',
-    // altText: 'Spring Collection',
-    // caption: 'Spring Collection'
-    src: 'https://theme.hstatic.net/1000409756/1000626231/14/slideshow_3.jpg?v=271',
-    altText: 'UV Protection Coat',
-    caption: 'UV Protection Coat'
+    src: 'https://images.alphacoders.com/892/892616.png',
+    altText: 'I Love You',
+    caption: 'I Love You'
   },
   {
-    src: 'https://leika.vn/wp-content/uploads/2019/05/happy-mother-day-anh-bia.jpg',
-    altText: 'Happy Mothers Day 2021',
-    caption: 'Happy Mothers Day 2021'
-  }
+    src: 'https://images.wallpapersden.com/image/download/broken-heart-anime-girl_a2ZsbmWUmZqaraWkpJRnamtlrWZlbWU.jpg',
+    altText: '愛している',
+    caption: '愛している'
+  },
+  // {
+  //   src: 'https://theme.hstatic.net/1000341902/1000629852/14/slideshow_3.jpg?v=336',
+  //   altText: 'Aodai Collection',
+  //   caption: 'Aodai Collection'
+  // },
+  // {
+  //   src: 'https://theme.hstatic.net/1000409756/1000626231/14/slideshow_3.jpg?v=271',
+  //   altText: 'UV Protection Coat',
+  //   caption: 'UV Protection Coat'
+  // },
+  // {
+  //   src: 'https://leika.vn/wp-content/uploads/2019/05/happy-mother-day-anh-bia.jpg',
+  //   altText: 'Happy Mothers Day 2021',
+  //   caption: 'Happy Mothers Day 2021'
+  // }
 ];
 
 export function MyCarousel() {

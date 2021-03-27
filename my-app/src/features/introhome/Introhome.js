@@ -15,7 +15,7 @@ export function Introhome() {
                     <Col xs="12" sm="6" md="4" lg="3">
                         <div className="Introhome__box">
                             <div className="Introhome__image">
-                                <img className="img-fluid" src={box1}></img>
+                                <img className="img-fluid" src={box1} alt="box1"></img>
                             </div>
                             <div className="Introhome__title">
                                 WE ON-TOP!
@@ -28,7 +28,7 @@ export function Introhome() {
                     <Col xs="12" sm="6" md="4" lg="3">
                         <div className="Introhome__box">
                             <div className="Introhome__image">
-                                <img className="img-fluid" src={box2}></img>
+                                <img className="img-fluid" src={box2} alt="box2"></img>
                             </div>
                             <div className="Introhome__title">
                                 WE LISTEN
@@ -41,7 +41,7 @@ export function Introhome() {
                     <Col xs="12" sm="6" md="4" lg="3">
                         <div className="Introhome__box">
                             <div className="Introhome__image">
-                                <img className="img-fluid" src={box3}></img>
+                                <img className="img-fluid" src={box3} alt="box3"></img>
                             </div>
                             <div className="Introhome__title">
                                 WE UNDERSTAND
@@ -66,10 +66,24 @@ export function Introhome() {
                         📢 Subcribe our Youtube channel to follow the latest videos 🌺
                         </div>
                         <div className="Introhome__youtube">
-                        <iframe 
+                        <Row>
+                            <Col xs="12" sm="1" md="2" lg="2"></Col>
+                            <Col xs="12" sm="10" md="8" lg="8">
+                                <iframe 
+                                    style={{'width':'100%', 'height':'350px'}}
+                                    src="https://www.youtube.com/embed/kgM3uUEMbYk"
+                                    title="Intro Youtube Channel"
+                                >
+                                </iframe>
+                            </Col>
+                            <Col xs="12" sm="1" md="2" lg="2"></Col>
+                        </Row>
+                        {/* <iframe 
                             width="660" height="400"
-                            src="https://www.youtube.com/embed/kgM3uUEMbYk">
-                        </iframe>
+                            src="https://www.youtube.com/embed/kgM3uUEMbYk"
+                            title="Intro Youtube Channel"
+                        >
+                        </iframe> */}
                         </div>
                     </Col>
                 </Row>
