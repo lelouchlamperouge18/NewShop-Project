@@ -10,6 +10,7 @@ import { Contact } from './pages/contact/Contact';
 import { Cartpage } from './pages/cartpage/Cartpage';
 import { Singlepostpage } from './pages/singlepostpage/Singlepostpage';
 import { Singlesubcategorypage } from './pages/singlesubcategorypage/Singlesubcategorypage';
+import { Backtotop } from './features/backtotop/Backtotop';
 
 function App() {
   return (
@@ -35,8 +36,9 @@ function App() {
             <Route path="/others-accessories/others" component={Singlesubcategorypage} /> 
           </Switch>
 
+          <Backtotop />
           <Footer />
-        </BrowserRouter> 
+        </BrowserRouter>
       </Suspense>    
     </div>
   );

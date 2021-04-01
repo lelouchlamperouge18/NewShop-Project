@@ -16,10 +16,10 @@ export function Listproduct() {
     const listofProduct = useSelector(listProductAvailable);
     const quantityProduct = listofProduct.length;
     return (
-        <div className="Listproduct">
+        <div className="Listproduct"> 
             <br></br>
             <p style={{'color': 'purple', 'font-size': 30}}>LIST PRODUCTS</p>
-            <p> Hiện có {quantityProduct} sản phẩm </p>
+            <p> {quantityProduct} products available </p>
             <hr></hr>
             <Container>
                 <Row>
