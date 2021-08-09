@@ -14,14 +14,17 @@ export function Covid19() {
                     <p id="totalConfirmed"> Total Confirmed World: ${data.Global.TotalConfirmed} </p>
                     <p id="totalDeaths"> Total Deaths World: ${data.Global.TotalDeaths} </p>
                     <p id="totalRecovered"> Total Recovered World: ${data.Global.TotalRecovered} </p>
-                    <p id="totalConfirmedVietnam"> Total Confirmed Vietnam: ${data.Countries[186].TotalConfirmed} </p>
-                    <p id="totalDeathsVietnam"> Total Deaths Vietnam: ${data.Countries[186].TotalDeaths} </p>
-                    <p id="totalRecoveredVietnam"> Total Recovered Vietnam: ${data.Countries[186].TotalRecovered} </p>
                 `;
                 $("#data").html(data);
             })           
         }
     })
+    // <p id="totalConfirmedVietnam"> Total Confirmed Vietnam: ${data.Countries[186].TotalConfirmed} </p>
+    // <p id="totalDeathsVietnam"> Total Deaths Vietnam: ${data.Countries[186].TotalDeaths} </p>
+    // <p id="totalRecoveredVietnam"> Total Recovered Vietnam: ${data.Countries[186].TotalRecovered} </p>
+    // <p id="totalConfirmedVietnam"> Total Confirmed Vietnam: ${data.Countries[186].TotalConfirmed} </p>
+    // <p id="totalDeathsVietnam"> Total Deaths Vietnam: ${data.Countries[186].TotalDeaths} </p>
+    // <p id="totalRecoveredVietnam"> Total Recovered Vietnam: ${data.Countries[186].TotalRecovered} </p>
     function refreshData(){
         // document.getElementById("Covid19_refresh").innerHTML = "Loading...";
         $("#data").empty();
@@ -33,9 +36,6 @@ export function Covid19() {
                     <p id="totalConfirmed"> Total Confirmed World: ${data.Global.TotalConfirmed} </p>
                     <p id="totalDeaths"> Total Deaths World: ${data.Global.TotalDeaths} </p>
                     <p id="totalRecovered"> Total Recovered World: ${data.Global.TotalRecovered} </p>
-                    <p id="totalConfirmedVietnam"> Total Confirmed Vietnam: ${data.Countries[186].TotalConfirmed} </p>
-                    <p id="totalDeathsVietnam"> Total Deaths Vietnam: ${data.Countries[186].TotalDeaths} </p>
-                    <p id="totalRecoveredVietnam"> Total Recovered Vietnam: ${data.Countries[186].TotalRecovered} </p>
                 `;
                 $("#data").html(data);
             });
